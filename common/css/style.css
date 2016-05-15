@@ -1,0 +1,101 @@
+body {
+  font-family: 'Poiret One', cursive; }
+
+h1 {
+  text-align: center; }
+
+#news, #menu, #photogallery {
+  z-index: 20; }
+  #news li, #menu li, #photogallery li {
+    display: inline-block;
+    margin-bottom: 5px; }
+  #news .content, #menu .content, #photogallery .content {
+    left: 280px;
+    position: absolute;
+    padding-bottom: 70px; }
+
+.panel {
+  min-width: 100%;
+  height: 98%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: -150%;
+  position: absolute;
+  background: #000;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out; }
+
+.panel:target {
+  margin-top: 0%;
+  background-color: #ffffff; }
+
+header .imj-logo {
+  display: block;
+  margin: 15px auto; }
+
+header .saiyo-logo {
+  background: yellow;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  height: auto;
+  max-width: 100%;
+  padding: 15px;
+  width: 235px; }
+
+header div.menu {
+  position: absolute;
+  z-index: 2000; }
+  header div.menu ul {
+    display: block;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    width: 235px;
+    z-index: 3; }
+    header div.menu ul li a {
+      background: yellow;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      display: block;
+      margin-bottom: 5px;
+      padding: 10px 50px; }
+
+#top {
+  left: 280px;
+  top: 63px;
+  position: absolute;
+  padding-bottom: 30px; }
+
+#news li, #menu li {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  display: inline-block; }
+  #news li div, #menu li div {
+    position: relative; }
+    #news li div a img, #menu li div a img {
+      max-width: 100%; }
+      @media screen and (max-width: 768px) {
+        #news li div a img, #menu li div a img {
+          height: auto; } }
+    #news li div a p, #menu li div a p {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #ffffff;
+      margin: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: #000000 3px solid;
+      padding: 15px 10px 3%;
+      font-size: medium;
+      font-family: 'Noto Sans Japanese', serif; }
+
+#menu p {
+  text-align: center; }
+
+footer {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  z-index: 9999;
+  right: 0;
+  left: 0; }
