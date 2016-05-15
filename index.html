@@ -19,10 +19,11 @@
 <body>
 	<div>
 		<header>
-			<div>
+			<div class="hidden-xs">
 			<img src="./common/img/2017 Recruitment_logo.png" class="imj-logo" height="33" width="148">
 			</div>
-			<div class="menu">
+
+			<div class="menu hidden-xs">
 				<img src="common/img/logo.png" class="saiyo-logo" height="196" width="276">
 				<ul>
 					<li><a href="#top">TOP</a></li>
@@ -31,6 +32,33 @@
 					<li><a href="#photogallery">PHOTOGALLERY</a></li>
 				</ul>
 			</div>
+			
+			<!-- 768px未満 -->
+			<nav class="navbar visible-xs">
+				<div class="navbar-header">
+					<div class="xs-img">
+						<img src="./common/img/2017 Recruitment_logo.png" class="imj-logo" height="33" width="148">
+					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+						<span class="sr-only">メニュー</span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+					</button>
+					<div id="gnavi" class="collapse navbar-collapse">
+					    <ul class="nav navbar-nav">
+					      <li><a href="#top">TOP</a></li>
+					      <li><a href="#news">NEWS</a></li>
+					      <li><a href="#menu">MENU</a></li>
+					      <li><a href="#photogallery">PHOTOGALLERY</a></li>
+					    </ul>
+					</div>
+				</div>
+				<div>
+					<img src="common/img/logo.png" class="saiyo-logo" height="196" width="276">
+				</div>
+			</nav>
+
 		</header>
 
 		<section id="top" class="content">
@@ -48,30 +76,18 @@
 			  <div class="carousel-inner" role="listbox">
 			    <div class="item active">
 			      <img src="./common/img/17.png" height="100%" width="100%">
-			      <div class="carousel-caption">
-			        ...
-			      </div>
 			    </div>
 
 			    <div class="item">
 			      <img src="./common/img/16.png" height="100%" width="100%">
-			      <div class="carousel-caption">
-			        ...
-			      </div>
 			    </div>
 
 			    <div class="item">
 			      <img src="./common/img/15.png" height="100%" width="100%">
-			      <div class="carousel-caption">
-			        ...
-			      </div>
 			    </div>
 
 			    <div class="item">
 			      <img src="./common/img/14.png" height="100%" width="100%">
-			      <div class="carousel-caption">
-			        ...
-			      </div>
 			    </div>
 			  </div>
 
@@ -92,32 +108,34 @@
 		<section id="news" class="panel">
 			<div class="content">
 				<h1>NEWS</h1>
-				<ul>
-					<li>
-						<div>
-							<a href="#">
-								<img src="common/img/6.png">
-								<p>素材は毎日、産地直送。とことんこだわっています。</p>
-							</a>
-						</div>
-					</li>
-					<li>
-						<div>
-							<a href="#">
-								<img src="common/img/7.png">
-								<p>ワインの種類増えました。リクエスト承ります。</p>
-							</a>
-						</div>	
-					</li>
-					<li>
-						<div>
-							<a href="#">
-								<img src="common/img/8.png">
-								<p>期間限定メニュー、ご予約受付開始しました。</p>
-							</a>
-						</div>
-					</li>
-				</ul>
+				<div>
+					<ul>
+						<li>
+							<div>
+								<a href="#">
+									<img src="common/img/6.png">
+									<p>素材は毎日、産地直送。とことんこだわっています。</p>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="#">
+									<img src="common/img/7.png">
+									<p>ワインの種類増えました。リクエスト承ります。</p>
+								</a>
+							</div>	
+						</li>
+						<li>
+							<div>
+								<a href="#">
+									<img src="common/img/8.png">
+									<p>期間限定メニュー、ご予約受付開始しました。</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
