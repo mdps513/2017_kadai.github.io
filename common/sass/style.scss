@@ -7,14 +7,14 @@ body{
 	font-family: 'Poiret One', cursive;
 }
 
-
-
 h1{	
-	text-align: left;
     padding-left: 40px;
-	}
+    text-align: left;
+}
 
-#news,#menu,#photogallery{
+#news,
+#menu,
+#photogallery{
 	 z-index: 20;
 
 	li{
@@ -25,41 +25,38 @@ h1{
 	.content{
 		@media screen and (min-width: $media-small) {
 		left: 280px;
+		padding-bottom: 70px;
 	    position: absolute;
-	    padding-bottom: 70px
 		}
 	}
 }
 
 .panel{
 	margin-bottom: 0px;
-	@media screen and (min-width: $media-small) {			
-		min-width: 100%;
-		height: 98%;
-		overflow-y: auto;
-		overflow-x: hidden;
-		margin-top: -150%;
-		position: absolute;
+	@media screen and (min-width: $media-small) {
 		background: #000;
 		box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
-		z-index: 2;
-
+		height: 98%;
+		margin-top: -150%;		
+		min-width: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		position: absolute;
+		transition: all .8s ease-in-out;
 		-webkit-transition: all .8s ease-in-out;
 		-moz-transition: all .8s ease-in-out;
 		-o-transition: all .8s ease-in-out;
-		transition: all .8s ease-in-out;
+		z-index: 2;
 	}
 }
 .panel:target{
-	@media screen and (min-width: $media-small) {	
-		margin-top: 0%;
+	@media screen and (min-width: $media-small) {
 		background-color: $panel-color;
+		margin-top: 0%;
 	}
 }
 
-
 header{
-
 	.xs-img{
 		display: inline-block;
 	    margin-left: 10px;
@@ -82,10 +79,9 @@ header{
 		    box-shadow: none;
 		    display: block;
 		    margin: 0 auto;
+		}
 	}
-		
-	}
-	div.menu{
+	.header__menu{
 			position: absolute;
 			z-index: 2000;
 		ul{ 
@@ -103,8 +99,8 @@ header{
 					display: block;
 					color:#D9534F;
 					margin-bottom: 5px;
-    				padding: 10px 50px;
-    				
+					padding: 10px 50px;
+					
 				}
 			}
 		}
@@ -114,7 +110,7 @@ header{
 			margin-bottom: 0;
 		}
 		.navbar-header{
-			button{
+			.navbar-toggle{
 				background-color: rgba(0, 0, 0, 0.19);
 				border: 1px solid rgba(0, 0, 0, 0.25);
 				margin-top: 12px;
@@ -123,13 +119,9 @@ header{
 
 				}
 			}
-			div{
-				ul{
-					li{
-						a{
-							color:#D9534F;
-						}
-					}
+			.navbar-nav{
+				&__color{
+					color:#D9534F;
 				}
 			}
 		}
@@ -139,16 +131,17 @@ header{
 
 #top{
     left: 280px;
-    top: 64px;
     position: absolute;
     padding-bottom: 30px;
+    top: 64px;
     @media screen and (max-width: $media-small) {
     	left: 0;
     	position: initial;
 	}
 }
 
-#news,#menu{
+#news,
+#menu{
 	li{
 		box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 		display: inline-block;
@@ -165,25 +158,21 @@ header{
 					}
 				}
 				p{
-					position: absolute;
-					bottom: 0;
-					left: 0;
-				    color: #ffffff;
-				    margin: 0;
-				    width: 100%;
-				    background: rgba(0, 0, 0, 0.8);
+					background: rgba(0, 0, 0, 0.8);
 				    border-bottom: #000000 3px solid;
-				    padding: 15px 10px 3%;
-				    font-size: medium;
+					bottom: 0;
+					color: #ffffff;
 				    font-family: 'Noto Sans Japanese', serif;
+				    font-size: medium;
+					left: 0;
+				    margin: 0;
+				    padding: 15px 10px 3%;
+				    position: absolute;
+				    width: 100%;
 				}
 			}
 		}
 	}
-}
-
-#news{
-
 }
 
 #menu{
@@ -195,14 +184,13 @@ header{
 		}
 }
 
-
 footer{
 	bottom: 0;
+    left: 0;
   	position: absolute;
+  	right: 0;
   	text-align: center;
   	z-index: 9999;
-  	right: 0;
-    left: 0;
 	@media screen and (max-width: $media-small) {
 		position: relative;
 	}
